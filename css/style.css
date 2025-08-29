@@ -1,0 +1,75 @@
+
+* {
+    font-family: 'Lato', Arial, sans-serif;
+    box-sizing: border-box;
+}
+@media (max-width: 768px) {
+    .main-app {
+        position: absolute;
+        display: flex;
+        align-items: center;   /* centraliza vertical */
+        justify-content: center; /* centraliza horizontal */
+        width: 100%;
+        height: 100vh;
+        background: url("../images/image_1_mobile.jpg") center/cover no-repeat;
+    }
+    .main-vertical {
+        /* background: rgba(255,255,255,0.9); */
+        /* padding: 10px; */
+        width: 60%;
+        height: 100vh;
+        text-align: center;
+        border-left: dashed 1px rgba(255,255,255,0.9);
+        border-right: dashed 1px rgba(255,255,255,0.9);
+        /* border-radius: 10px; */
+    }
+
+    .header-logo {
+        margin: -15px auto;
+        height: 100px;
+        /* position: fixed;       */
+        top: 0;               /* topo da tela */
+        left: 0;              /* borda esquerda da tela */
+        z-index: 999;         /* fica sobre todo o resto */
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header {
+        width: 100%;
+        height: 25px;
+        background-color: rgba(255, 235, 59, 0.7);
+        border-top: 1px solid rgb(128, 0, 128);
+        border-bottom: 1px solid rgb(128, 0, 128);
+
+        position: fixed;      /* fixo no topo */
+        top: 80px;               /* topo da tela */
+        left: 0;              /* borda esquerda da tela */
+        z-index: 998;         /* fica sobre todo o resto */
+    }
+    .container-menu{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+
+        padding-left: 6px;
+    }
+    .header nav a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #7A1FA2; /* roxo vibrante */
+        font-size: 10px;
+        padding : 4px;
+    }
+    .barra {
+        width: 2px;                 /* espessura da linha */
+        background-color: #7A1FA2;  /* cor da barra */
+        height: 15px;               /* altura da barra */
+        margin-top: 4px;
+        /* margin-right: 20px;           */
+    }
+   
+}
