@@ -164,4 +164,15 @@
         top: 62px;
         left: 90px;
     }
+    .card-6 {
+        position: absolute;
+        top: 502px;
+        left: 50%;
+        transform: translateX(-50%); /* centraliza horizontalmente */
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
