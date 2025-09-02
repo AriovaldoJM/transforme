@@ -22,7 +22,7 @@
     }
     /* a régua central */
     .main-vertical {
-        width: 64%;
+        width: 100%;
         height: 100%;               /* ocupa a altura do bloco pai */
         border-left: dashed 1px rgba(255,255,255,0.9);
         border-right: dashed 1px rgba(255,255,255,0.9);
@@ -42,11 +42,11 @@
         justify-content: center;
     }
     /* menu */
-    .menu {
+    /* .menu {
         position: absolute;
         top: 66px;
         left: 50%;
-        transform: translateX(-50%); /* centraliza horizontalmente */
+        transform: translateX(-50%); 
         
         width: 100%;
         background-color: rgba(255, 235, 59, 0.7);
@@ -54,8 +54,8 @@
         border-bottom: 1px solid rgb(128, 0, 128);
         text-align: center;
         padding: 4px 0;
-    }
-    .container-menu {
+    } */
+    /* .container-menu {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -71,7 +71,7 @@
         width: 2px;
         height: 10px;
         background-color: #7A1FA2;
-    }
+    } */
     .bg-2 {
         width: 100%;
         height: 594px;
@@ -166,7 +166,7 @@
     }
     .card-6 {
         position: absolute;
-        top: 502px;
+        top: 496px;
         left: 50%;
         transform: translateX(-50%); /* centraliza horizontalmente */
     
