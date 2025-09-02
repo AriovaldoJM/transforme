@@ -74,7 +74,7 @@
     } */
     .bg-2 {
         width: 100%;
-        height: 594px;
+        height: 742px;
         margin-top: -0px;
         display: flex;              /* para centralizar .main-vertical */
         justify-content: center;
@@ -84,7 +84,7 @@
     }
     .bg-2-first-layer{
         width: 100%;
-        height: 482px;
+        height: 602px;
         background-color: rgba(0, 0, 0, 0.4);
         margin-top:1px;
         z-index: 999;
@@ -106,19 +106,19 @@
         left: 50%;
         transform: translateX(-50%); /* centraliza horizontalmente */
     
-        height: 150px;
+        height: 224px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
     .emoji-card-2 {
         position: absolute;
-        top: 80px;
+        top: 180px;
         left: 90px;
     }
     .card-3 {
         position: absolute;
-        top: 196px;
+        top: 258px;
         left: 50%;
         transform: translateX(-50%); /* centraliza horizontalmente */
     
@@ -134,7 +134,7 @@
     }
     .card-4 {
         position: absolute;
-        top: 294px;
+        top: 382px;
         left: 50%;
         transform: translateX(-50%); /* centraliza horizontalmente */
     
@@ -150,7 +150,7 @@
     }
     .card-5 {
         position: absolute;
-        top: 392px;
+        top: 506px;
         left: 50%;
         transform: translateX(-50%); /* centraliza horizontalmente */
     
@@ -166,7 +166,7 @@
     }
     .card-6 {
         position: absolute;
-        top: 496px;
+        top: 626px;
         left: 50%;
         transform: translateX(-50%); /* centraliza horizontalmente */
     
