@@ -5,12 +5,11 @@
     box-sizing: border-box;
     font-family: 'Lato', Arial, sans-serif;
 }
-@media (max-width: 768px) {
+@media (max-width: 430px) {
     .main-app {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
 
     /* cada bloco ocupa tela cheia */
@@ -20,15 +19,6 @@
 
         background: url("../images/image_v2_1_mobile.webp") center/cover no-repeat;
     }
-    /* a régua central */
-    /* .main-vertical {
-        width: 80%;
-        height: 100%;              
-        border-left: dashed 1px rgba(255,255,255,0.9);
-        border-right: dashed 1px rgba(255,255,255,0.9);
-        position: relative;        
-        z-index: 1;
-    } */
     /* logo dentro da faixa central */
     .menu-logo {
         position: absolute;
@@ -89,11 +79,7 @@
         position: absolute;
         top: 778px;
         left: 50%;
-        transform: translateX(-50%); /* centraliza horizontalmente */
-    
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        transform: translateX(-50%);
 
         z-index: 2;
     }
@@ -101,29 +87,25 @@
         position: absolute;
         top: 10px;
         left: 50%;
-        transform: translateX(-50%); /* centraliza horizontalmente */
+        transform: translateX(-50%);
 
-        width: 450px;
+        width: 360px;
 
         display: flex;
         flex-direction: column;
         text-align: center;
         justify-content: center;
 
-        font-size: 20px;
+        font-size: 18px;
         color: rgb(64,0,63);
 
-        z-index: 999;
+        z-index: 3;
     }
     .card-3 {
         position: absolute;
         top: 924px;
         left: 50%;
-        transform: translateX(-50%); /* centraliza horizontalmente */
-    
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        transform: translateX(-50%); 
 
         z-index: 2;
     }
@@ -131,29 +113,24 @@
         position: absolute;
         top: 10px;
         left: 50%;
-        transform: translateX(-50%); /* centraliza horizontalmente */
-
-        width: 450px;
+        transform: translateX(-50%); 
+        width: 360px;
 
         display: flex;
         flex-direction: column;
         text-align: center;
         justify-content: center;
 
-        font-size: 20px;
+        font-size: 18px;
         color: rgb(64,0,63);
 
-        z-index: 999;
+        z-index: 3;
     }
     .card-4 {
         position: absolute;
         top: 1068px;
         left: 50%;
-        transform: translateX(-50%); /* centraliza horizontalmente */
-    
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        transform: translateX(-50%); 
 
         z-index: 2;
     }
@@ -163,27 +140,23 @@
         left: 50%;
         transform: translateX(-50%); /* centraliza horizontalmente */
 
-        width: 450px;
+        width: 360px;
 
         display: flex;
         flex-direction: column;
         text-align: center;
         justify-content: center;
 
-        font-size: 20px;
+        font-size: 18px;
         color: rgb(64,0,63);
 
-        z-index: 999;
+        z-index: 3;
     }
     .card-5 {
         position: absolute;
         top: 1212px;
         left: 50%;
-        transform: translateX(-50%); /* centraliza horizontalmente */
-    
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        transform: translateX(-50%); 
 
         z-index: 2;
     }
@@ -193,17 +166,17 @@
         left: 50%;
         transform: translateX(-50%); /* centraliza horizontalmente */
 
-        width: 450px;
+        width: 360px;
 
         display: flex;
         flex-direction: column;
         text-align: center;
         justify-content: center;
 
-        font-size: 20px;
+        font-size: 18px;
         color: rgb(64,0,63);
 
-        z-index: 999;
+        z-index: 3;
     }
     .container-bg-1-1 {
         position: absolute;
@@ -329,6 +302,7 @@
         top: 50px;
         left: 50%;
         transform: translateX(-50%);
+
     
         display: flex;
         align-items: center;
@@ -343,7 +317,7 @@
         transform: translateX(-50%);
 
         width: 100%;
-        max-width: 254px;  
+        max-width: 256px;  
         margin: 0 auto;
         aspect-ratio: 8 / 14; 
         
@@ -365,12 +339,12 @@
    
     .video-wrap-after {
         position: absolute;
-        top: 1002px;
+        top: 1082px;
         left: 50%;
         transform: translateX(-48%); 
 
         width: 100%;
-        max-width: 254px; 
+        max-width: 256px; 
         margin: 0 auto;
         aspect-ratio: 8 / 14; 
         overflow: hidden;
@@ -391,14 +365,14 @@
 
     .container-bg-2-1 {
         position: absolute;
-        top: 574px;
+        top: 598px;
         left: 50%;
         transform: translateX(-50%);
 
         z-index:999;
 
         width: 90%;
-        height: 340px;
+        height: 390px;
 
         display: flex;
         align-items: center;
@@ -413,7 +387,7 @@
     }
     .container-hr {
         position: absolute;
-        top: 60px;
+        top: 86px;
         left: 50%;
         transform: translateX(-50%);
 
@@ -446,7 +420,7 @@
 
     .btn {
         position: absolute;
-        top: 1490px;
+        top: 1590px;
         left: 50%;
         transform: translateX(-50%); 
         width: 56%;
@@ -467,7 +441,7 @@
     }
     .rope-btn {
         position: absolute;
-        top: 1516px;
+        top: 1616px;
         left: 50%;
         transform: translateX(-50%); 
 
