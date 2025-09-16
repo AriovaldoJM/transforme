@@ -17,11 +17,8 @@
     .bg-1 {
         width: 100%;
         height: 1920px;
-        display: flex;              /* para centralizar .main-vertical */
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        background: url("../images/image_v2_1_mobile.png") center/cover no-repeat;
+
+        background: url("../images/image_v2_1_mobile.webp") center/cover no-repeat;
     }
     /* a régua central */
     /* .main-vertical {
@@ -302,7 +299,7 @@
         justify-content: center;
         align-items: center;
         position: relative;
-        background: url("../images/image_v2_9_mobile.png") center/cover no-repeat;
+        background: url("../images/image_v2_9_mobile.webp") center/cover no-repeat;
     }
 
     /* .card-6 {
