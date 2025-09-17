@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Lembrete Importante</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --accent: rgb(206,38,155,0.9);   /* rosa forte */
+  --purple: rgba(128,0,128,0.8);   /* roxo translúcido */
+  --yellow: #ffeb3b;               /* amarelo */
+  --radius: 12px;
+}
+* { box-sizing: border-box; margin:0; padding:0; }
+body {
+  font-family: 'Inter', system-ui, Arial, sans-serif;
+  background: #fff;
+  color: #333;
+  padding: 40px 20px;
+  display:flex;
+  justify-content:center;
+}
+.reminder {
+  max-width: 600px;
+  background: #fff;
+  border: 2px solid var(--accent);
+  border-left: 10px solid var(--purple);
+  border-radius: var(--radius);
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  position: relative;
+}
+.reminder h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--purple);
+  margin-bottom: 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.reminder h2 span {
+  font-size: 1.4rem;
+}
+.reminder p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #444;
+}
+.reminder .highlight {
+  background: var(--yellow);
+  color: #000;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+</style>
+</head>
+<body>
+
+<div class="reminder">
+  <h2><span>📌</span> Informação Importante</h2>
+  <p>
+    Garantia Incondicional de <span class="highlight">7 Dias</span> —  
+    você tem 7 dias completos para experimentar o treinamento.  
+  </p>
+  <p>
+    Se por qualquer motivo achar que não é para você, basta pedir o reembolso.  
+    Sem burocracia, sem letras miúdas.
+  </p>
+</div>
+
+</body>
+</html>
