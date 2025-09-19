@@ -738,6 +738,27 @@
         overflow:hidden;
         transition:max-height 0.25s ease;
     }
+    .icon{
+        font-size: var(--font-size-2xl);
+        margin-left: -10px;
+        line-height: 1;
+        display: inline-block;
+    }
+    .summary{
+        text-align: left;
+        font-size: var(--font-size-md);
+        letter-spacing: 1px;
+        flex: 1;
+        margin: 0 0.5rem;
+    }
+
+
+
+
+
+
+
+
     .content ul{padding-left:1rem; margin:0.4rem 0;}
     .content li{margin-bottom:0.3rem;}
     .note{
@@ -782,18 +803,11 @@
         border-radius: 4px;
         font-weight: 600;
     }
-    .icon{
-        font-size: var(--font-size-2xl);
-        margin-left: -10px;
-        line-height: 1;
-        display: inline-block;
-    }
-    .summary{
-        text-align: left;
-        letter-spacing: 1px;
-        flex: 1;
-        margin: 0 0.5rem;
-    }
+    
+
+
+
+
 
     .bg-7 {
         position: relative;
