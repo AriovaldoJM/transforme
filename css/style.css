@@ -664,7 +664,7 @@
     }
     /* TERMINO PRODUTOS PARA COMPRAR */
     /* INICIO PERGUNTAS FREQUENTES*/
-    .frequently-questions {
+    .faqs-and-terms {
         position: relative;
 
         width: 100%;
@@ -673,13 +673,13 @@
         background: url("../images/image_v2_27_mobile.webp") center/cover no-repeat;
         z-index: 999;
     }
-    .frequently-questions__content{
+    .faqs__content{
         top: 5.625rem;
         width: 90%;
     }
     header{
         text-align:center;
-        margin-bottom:30px;
+        margin-bottom:1.875rem;
     }
     header h1{
         margin:0;
@@ -691,26 +691,25 @@
         margin-top:6px;
         font-size:0.95rem;
     }
-    .frequently-questions__content-wrap{
+    .faqs__content-wrap{
         background: var(--yellow);
         border-radius: var(--radius);
         padding:1rem 1.5rem;
         box-shadow: 0 4px 12px rgba(128,0,128,0.25);
         border: 2px solid var(--accent);
     }
-
-        /* Accordion */
+    /* Accordion */
     details{
-        background: rgba(128,0,128,0.8); /* fundo roxo translúcido */
+        background: var(--purple);
         border-radius: var(--radius);
         margin-bottom:12px;
         padding:0.8rem 1rem;
         transition: background 0.2s ease;
         border:2px solid rgba(206,38,155,0.6);
-        color: #fff;
+        color: var(--white);
     }
     details[open]{
-        background: #fff; /* leve rosa ao abrir */
+        background: var(--white);
         border-color: var(--accent);
     }
     summary{
@@ -720,7 +719,7 @@
         cursor:pointer;
         font-weight:600;
         outline:none;
-        font-size:1rem;
+        font-size:var(--font-size-base);
         color: rgb(220,234,103);
     }
     summary::-webkit-details-marker{display:none;}
@@ -731,16 +730,16 @@
     details[open] .chev{transform:rotate(180deg);}
         .content{
         padding-top:0.6rem;
-        color: rgb(64, 0, 63);
+        color: var(--text-color-primary);
         font-size:0.95rem;
-        line-height:1.5;
+        line-height:var(--line-height-base);
         max-height:0;
         overflow:hidden;
         transition:max-height 0.25s ease;
     }
     .icon{
         font-size: var(--font-size-2xl);
-        margin-left: -10px;
+        margin-left: 0.625rem;
         line-height: 1;
         display: inline-block;
     }
@@ -751,14 +750,6 @@
         flex: 1;
         margin: 0 0.5rem;
     }
-
-
-
-
-
-
-
-
     .content ul{padding-left:1rem; margin:0.4rem 0;}
     .content li{margin-bottom:0.3rem;}
     .note{
@@ -767,6 +758,8 @@
         color: var(--purple);
         text-align:center;
     }
+    /* TERMINO PERGUNTAS FREQUENTES*/
+    /* AVISO DE RESPONSABILIDADE*/
     .reminder {
         margin-top: 60px;
         max-width: 600px;
