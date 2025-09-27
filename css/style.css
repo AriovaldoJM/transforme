@@ -1898,7 +1898,7 @@ details[open] .chev{transform:rotate(180deg);}
 
     }
     .footer__content-social-media {
-        top: 11.5rem;
+        top: 9.8rem;
         width: 100%;
         height: 6.1rem;
 
@@ -1913,7 +1913,7 @@ details[open] .chev{transform:rotate(180deg);}
     /* Estilização do link */
     .footer__content-menu {
         width: 100%;
-        margin-top: 15rem;
+        margin-top: 14rem;
             
         display: flex;
         flex-direction: row;
@@ -1933,6 +1933,7 @@ details[open] .chev{transform:rotate(180deg);}
         font-size: var(--font-size-md);
     }
     .footer__content-menu-separator {
+        margin-top: 3rem;
         padding: 0rem 0.5rem;
         color: var(--accent);
     }
