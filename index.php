@@ -1,50 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.webp">
+    <title>TransformaCorda</title>
+    <meta name="keywords" content="fitness, treinamentos de pular corda, aulas de pular corda, pular corda para iniciantes, passo a passo para aprender a pular corda, pular corda jeito certo, como aprender a pular corda, treinamento de pular corda online, aulas de pular corda para iniciantes, técnica correta de pular corda, como começar a pular corda, treino prático com corda em casa, aprender a pular corda passo a passo, aprender a pular corda, curso pular corda, aprenda pular corda, exercício eficaz em casa, treino rápido e eficiente em casa, exercícios fáceis para começar em casa, exercícios que dão resultado em casa" />
+    <meta name="description" content="Aprenda a pular corda do jeito certo com o método TransformaCorda. Treinos práticos, divertidos e eficientes para transformar sua rotina.">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <!-- Google tag (gtag.js) --> 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17614092551"></script> 
+    <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-17614092551'); </script>
 </head>
 <body>
-<div class="main-app">
     <!-- Bloco 1 -->
     <section class="bg-person">
         <div class="main-vertical">
             <div class="menu-logo">
                 <picture>
-                    <source srcset="https://ariovaldojm.github.io/transforme/images/logo_v2.webp" type="image/webp">
-                    <img src="https://ariovaldojm.github.io/transforme/images/logo_v2.png" alt="Logo">
+                    <!-- versão desktop -->
+                    <source 
+                    srcset="images/logo_v2_sem_corda.png" 
+                    media="(min-width: 1024px)">
+                    <source srcset="images/logo_v2.webp" type="image/webp" class="sem-corda">
+                    <img src="images/logo_v2.png" alt="Logo">
                 </picture>
             </div>
             <div class="position-pattern card--transform">
                 <picture>
                     <!-- versão desktop -->
                     <source 
-                    srcset="../images/image_v2_3_desktop.webp" 
+                    srcset="images/image_v2_3_desktop.webp" 
                     media="(min-width: 1024px)" 
                     type="image/webp">
                     <source 
-                    srcset="../images/image_v2_3_desktop.png" 
+                    srcset="images/image_v2_3_desktop.png" 
                     media="(min-width: 1024px)">
 
                     <!-- versão mobile -->
                     <source 
-                    srcset="../images/image_v2_3_mobile.webp" 
+                    srcset="images/image_v2_3_mobile.webp" 
                     type="image/webp">
                     <img 
-                    src="../images/image_v2_3_mobile.png" 
+                    src="images/image_v2_3_mobile.png" 
                     alt="Transforma Corda com Gabi" 
                     width="300">
                 </picture>
             </div>
             <div class="position-pattern card--simple">
                 <picture>
-                    <source srcset="https://ariovaldojm.github.io/transforme/images/image_v2_4_mobile.webp" type="image/webp">
-                    <img src="https://ariovaldojm.github.io/transforme/images/image_v2_4_mobile.png" alt="Transforma Corda com Gabi" width="360px">
+                    <source srcset="images/image_v2_4_mobile.webp" type="image/webp">
+                    <img src="images/image_v2_4_mobile.png" alt="Transforma Corda com Gabi" width="360px">
                     
                 </picture>
                 <div class="position-pattern card__description">
@@ -58,8 +67,8 @@
             </div>
             <div class="position-pattern card--fast">
                 <picture>
-                    <source srcset="https://ariovaldojm.github.io/transforme/images/image_v2_4_mobile.webp" type="image/webp">
-                    <img src="https://ariovaldojm.github.io/transforme/images/image_v2_4_mobile.png" alt="Transforma Corda com Gabi" width="360px">
+                    <source srcset="images/image_v2_4_mobile.webp" type="image/webp">
+                    <img src="images/image_v2_4_mobile.png" alt="Transforma Corda com Gabi" width="360px">
                 </picture>
                 <div class="position-pattern card__description">
                     <p>
@@ -71,8 +80,8 @@
             </div>
             <div class="position-pattern card--fun">
                 <picture>
-                    <source srcset="https://ariovaldojm.github.io/transforme/images/image_v2_4_mobile.webp" type="image/webp">
-                    <img src="https://ariovaldojm.github.io/transforme/images/image_v2_4_mobile.png" alt="Transforma Corda com Gabi" width="360px">
+                    <source srcset="images/image_v2_4_mobile.webp" type="image/webp">
+                    <img src="images/image_v2_4_mobile.png" alt="Transforma Corda com Gabi" width="360px">
                 </picture>
                 <div class="position-pattern card__description">
                     <p>
@@ -84,8 +93,8 @@
             </div>
             <div class="position-pattern card--cheap">
                 <picture>
-                    <source srcset="https://ariovaldojm.github.io/transforme/images/image_v2_4_mobile.webp" type="image/webp">
-                    <img src="https://ariovaldojm.github.io/transforme/images/image_v2_4_mobile.png" alt="Transforma Corda com Gabi" width="360px">
+                    <source srcset="images/image_v2_4_mobile.webp" type="image/webp">
+                    <img src="images/image_v2_4_mobile.png" alt="Transforma Corda com Gabi" width="360px">
                 </picture>
                 <div class="position-pattern card__description">
                     <p>
@@ -101,59 +110,63 @@
             <!-- mobile -->
             <div class="position-pattern container-secound">
                 <div class="container-secound--icon-first">
-                    <source srcset="https://ariovaldojm.github.io/transforme/images/image_v2_12_mobile.webp" type="image/webp">
-                    <img src="https://ariovaldojm.github.io/transforme/images/image_v2_12_mobile.png" alt="" >
+                    <source srcset="images/image_v2_12_mobile.webp" type="image/webp">
+                    <img src="images/image_v2_12_mobile.png" alt="" >
                 </div>
                 <div class="secound__cards-desktop d-none-mobile">
-                    <div class="secound__card-desktop">
-                        <div class="secound__card-desktop-description">
-                            <p style="padding: 8px 0px; color: yellow;">
-                                <strong> 01) É SIMPLES!</strong><br>
-                            </p>
-                            <p>
-                                Aprenda a pular corda <br>
-                                do zero, do jeito certo e<br>
-                                sem complicação!
-                            </p>
+                    <div class="container-secound--cards-desktop">
+                        <div class="secound__card-desktop">
+                            <div class="secound__card-desktop-description">
+                                <p style="padding: 8px 0px; color: yellow;">
+                                    <strong> 01) É SIMPLES!</strong><br>
+                                </p>
+                                <p>
+                                    Aprenda a pular corda <br>
+                                    do zero, do jeito certo e<br>
+                                    sem complicação!
+                                </p>
+                            </div>
+                        </div>
+                        <span class="arrow-cards">>></span>
+                        <div class="secound__card-desktop">
+                            <div class="secound__card-desktop-description">
+                                <p style="padding: 8px 0px; color: yellow;">
+                                    <strong> 02) POUCO TEMPO, <br> MUITA AÇÃO!</strong><br>
+                                </p>
+                                <p>
+                                    Com 15 minutos diários, <br>  você se exercita
+                                    de forma prática e eficiente.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <span class="arrow-cards">>></span>
-                    <div class="secound__card-desktop">
-                        <div class="secound__card-desktop-description">
-                            <p style="padding: 8px 0px; color: yellow;">
-                                <strong> 02) POUCO TEMPO, <br> MUITA AÇÃO!</strong><br>
-                            </p>
-                            <p>
-                                Com 15 minutos diários, <br>  você se exercita
-                                de forma prática e eficiente.
-                            </p>
+                    <div class="container-secound--cards-desktop">
+                        <span class="arrow-cards">>></span>
+                        <div class="secound__card-desktop">
+                            <div class="secound__card-desktop-description">
+                                <p style="padding: 8px 0px; color: yellow;">
+                                    <strong> 03) É DIVERTIDO!</strong><br>
+                                </p>
+                                <p>
+                                    Você entra no ritmo, <br> 
+                                    se diverte e
+                                    quando vê... <br>
+                                    já terminou o treino!
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <span class="arrow-cards">>></span>
-                    <div class="secound__card-desktop">
-                        <div class="secound__card-desktop-description">
-                            <p style="padding: 8px 0px; color: yellow;">
-                                <strong> 03) É DIVERTIDO!</strong><br>
-                            </p>
-                            <p>
-                                Você entra no ritmo, <br> 
-                                se diverte e
-                                quando vê... <br>
-                                já terminou o treino!
-                            </p>
-                        </div>
-                    </div>
-                     <span class="arrow-cards">>></span>
-                    <div class="secound__card-desktop">
-                        <div class="secound__card-desktop-description">
-                            <p style="padding: 8px 0px; color: yellow;">
-                                <strong>04) É BARATO!</strong><br>
-                            </p>
-                            <p>
-                                Pule corda onde quiser, sem <br>
-                                mensalidade de academia. <br>
-                                Custa pouco e vale muito!
-                            </p>
+                         <span class="arrow-cards">>></span>
+                        <div class="secound__card-desktop">
+                            <div class="secound__card-desktop-description">
+                                <p style="padding: 8px 0px; color: yellow;">
+                                    <strong>04) É BARATO!</strong><br>
+                                </p>
+                                <p>
+                                    Pule corda onde quiser, sem <br>
+                                    mensalidade de academia. <br>
+                                    Custa pouco e vale muito!
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -173,11 +186,11 @@
                     </p><br>
                 </div>
                 <div class="container-secound--icon-secound">
-                    <source srcset="https://ariovaldojm.github.io/transforme/images/image_v2_13_mobile.webp" type="image/webp">
-                    <img src="https://ariovaldojm.github.io/transforme/images/image_v2_13_mobile.png" alt="">
+                    <source srcset="images/image_v2_13_mobile.webp" type="image/webp">
+                    <img src="images/image_v2_13_mobile.png" alt="">
                 </div>
+                <div class="position-pattern container-third"></div>
             </div>
-            <div class="position-pattern container-third"></div>
         </div>
     </section>
     <!-- Bloco 2 -->
@@ -187,16 +200,16 @@
                 <picture>
                     <!-- versão desktop -->
                     <source 
-                    srcset="../images/image_v2_39_desktop.webp" 
+                    srcset="images/image_v2_39_desktop.webp" 
                     media="(min-width: 1024px)" 
                     type="image/webp">
                     <source 
-                    srcset="../images/image_v2_39_desktop.png" 
+                    srcset="images/image_v2_39_desktop.png" 
                     media="(min-width: 1024px)">
 
                     <!-- versão mobile -->
-                    <source srcset="https://ariovaldojm.github.io/transforme/images/image_v2_15_mobile.webp" type="image/webp">
-                    <img src="https://ariovaldojm.github.io/transforme/images/image_v2_15_mobile.png" alt="" width="274px">
+                    <source srcset="images/image_v2_15_mobile.webp" type="image/webp">
+                    <img src="images/image_v2_15_mobile.png" alt="" width="274px">
                 </picture>
                 <!-- desktop -->
                  <div class="position-pattern video-wrap-before-desktop">
@@ -290,15 +303,15 @@
             </iframe>
         </div>
         <div>
-            <a href="https://www.google.com" class="position-pattern btn-video" target="_blank">
+            <a href="https://pay.hotmart.com/X100220477W" class="position-pattern btn-video" target="_blank">
                 QUERO COMEÇAR<br>
                 A TREINAR HOJE
             </a>
         </div>
         <div class="position-pattern rope-btn-video">
             <picture>
-                <source srcset="https://ariovaldojm.github.io/transforme/images/image_v2_16_mobile.webp" type="image/webp">
-                <img src="https://ariovaldojm.github.io/transforme/images/image_v2_16_mobile.png" 
+                <source srcset="images/image_v2_16_mobile.webp" type="image/webp">
+                <img src="images/image_v2_16_mobile.png" 
                 alt="">
             </picture>
         </div>
@@ -334,15 +347,15 @@
                 </ul>
                 <!-- desktop -->
                 <div>
-                    <a href="https://www.google.com" class="position-pattern btn-transformation-desktop" target="_blank">
+                    <a href="https://pay.hotmart.com/X100220477W" class="position-pattern btn-transformation-desktop" target="_blank">
                         QUERO COMEÇAR <br>
                         A TREINAR HOJE
                     </a>
                 </div>
                 <div class="position-pattern rope-btn-transformation-desktop">
                     <picture>
-                        <source srcset="https://ariovaldojm.github.io/transforme/images/image_v2_16_mobile.webp" type="image/webp">
-                        <img src="https://ariovaldojm.github.io/transforme/images/image_v2_16_mobile.png" 
+                        <source srcset="images/image_v2_16_mobile.webp" type="image/webp">
+                        <img src="images/image_v2_16_mobile.png" 
                         alt="">
                     </picture>
                 </div>
@@ -359,7 +372,7 @@
                         </div>
                         <div class="container-user-guide__icon-description-desktop">
                             <div class="container-user-guide__icon-desktop">
-                                <img src="https://ariovaldojm.github.io/transforme/images/image_v2_18_mobile.png" alt="" width="40px">
+                                <img src="images/image_v2_18_mobile.png" alt="" width="40px">
                             </div>
                             <div class="container-user-guide__description-desktop">
                                 <p>
@@ -369,7 +382,7 @@
                         </div>
                         <div class="container-user-guide__icon-description-desktop">
                             <div class="container-user-guide__icon-desktop">
-                                <img src="https://ariovaldojm.github.io/transforme/images/image_v2_37_mobile.png" alt="" width="40px">
+                                <img src="images/image_v2_37_mobile.png" alt="" width="40px">
                             </div>
                             <div class="container-user-guide__description-desktop">
                                 <p>
@@ -379,31 +392,31 @@
                         </div>
                         <div class="container-user-guide__icon-description-desktop">
                             <div class="container-user-guide__icon-desktop">
-                                <img src="https://ariovaldojm.github.io/transforme/images/image_v2_38_mobile.png" alt="" width="40px">
+                                <img src="images/image_v2_38_mobile.png" alt="" width="40px">
                             </div>
                             <div class="container-user-guide__description-desktop">
                                 <p>
-                                    <strong>Manobras que impressionam</strong> – evolua e deixe seu treino mais bonito.
+                                    <strong>Manobras que impressionam</strong> – evolua e deixe seu treino mais bonito;
                                 </p>
                             </div>
                         </div>
                         <div class="container-user-guide__icon-description-desktop">
                             <div class="container-user-guide__icon-desktop">
-                                <img src="https://ariovaldojm.github.io/transforme/images/image_v2_21_mobile.png" alt="" width="40px">
+                                <img src="images/image_v2_21_mobile.png" alt="" width="40px">
                             </div>
                             <div class="container-user-guide__description-desktop">
                                 <p>
-                                    <strong>Compre uma vez e o conteúdo é seu para sempre;</strong>
+                                    <strong>Compre uma vez</strong> - e o conteúdo é seu para sempre;
                                 </p>
                             </div>
                         </div>
                         <div class="container-user-guide__icon-description-desktop">
                             <div class="container-user-guide__icon-desktop">
-                                <img src="https://ariovaldojm.github.io/transforme/images/image_v2_22_mobile.png" alt="" width="40px">
+                                <img src="images/image_v2_22_mobile.png" alt="" width="40px">
                             </div>
                             <div class="container-user-guide__description-desktop">
                                 <p>
-                                    <strong>Grupo fechado e exclusivo para apoiar sua transformação.</strong>
+                                    <strong>Grupo fechado e exclusivo </strong> - para apoiar sua transformação.
                                 </p>
                             </div>
                         </div>
@@ -412,15 +425,15 @@
             </div>
         </div>
         <div>
-            <a href="https://www.google.com" class="position-pattern btn-transformation" target="_blank">
+            <a href="https://pay.hotmart.com/X100220477W" class="position-pattern btn-transformation" target="_blank">
                 QUERO COMEÇAR <br>
                 A TREINAR HOJE
             </a>
         </div>
         <div class="position-pattern rope-btn-transformation">
             <picture>
-                <source srcset="https://ariovaldojm.github.io/transforme/images/image_v2_16_mobile.webp" type="image/webp">
-                <img src="https://ariovaldojm.github.io/transforme/images/image_v2_16_mobile.png" 
+                <source srcset="images/image_v2_16_mobile.webp" type="image/webp">
+                <img src="images/image_v2_16_mobile.png" 
                 alt="">
             </picture>
         </div>
@@ -439,7 +452,7 @@
                 </div>
                 <div class="container-user-guide__icon-description">
                     <div class="container-user-guide__icon">
-                        <img src="https://ariovaldojm.github.io/transforme/images/image_v2_18_mobile.png" alt="" width="40px">
+                        <img src="images/image_v2_18_mobile.png" alt="" width="40px">
                     </div>
                     <div class="container-user-guide__description">
                         <p>
@@ -449,7 +462,7 @@
                 </div>
                 <div class="container-user-guide__icon-description">
                     <div class="container-user-guide__icon">
-                        <img src="https://ariovaldojm.github.io/transforme/images/image_v2_37_mobile.png" alt="" width="40px">
+                        <img src="images/image_v2_37_mobile.png" alt="" width="40px">
                     </div>
                     <div class="container-user-guide__description">
                         <p>
@@ -459,7 +472,7 @@
                 </div>
                 <div class="container-user-guide__icon-description">
                     <div class="container-user-guide__icon">
-                        <img src="https://ariovaldojm.github.io/transforme/images/image_v2_38_mobile.png" alt="" width="40px">
+                        <img src="images/image_v2_38_mobile.png" alt="" width="40px">
                     </div>
                     <div class="container-user-guide__description">
                         <p>
@@ -469,21 +482,21 @@
                 </div>
                 <div class="container-user-guide__icon-description">
                     <div class="container-user-guide__icon">
-                        <img src="https://ariovaldojm.github.io/transforme/images/image_v2_21_mobile.png" alt="" width="40px">
+                        <img src="images/image_v2_21_mobile.png" alt="" width="40px">
                     </div>
                     <div class="container-user-guide__description">
                         <p>
-                            <strong>Compre uma vez e o conteúdo é seu para sempre;</strong>
+                            <strong>Compre uma vez</strong> - e o conteúdo é seu para sempre;
                         </p>
                     </div>
                 </div>
                 <div class="container-user-guide__icon-description">
                     <div class="container-user-guide__icon">
-                        <img src="https://ariovaldojm.github.io/transforme/images/image_v2_22_mobile.png" alt="" width="40px">
+                        <img src="images/image_v2_22_mobile.png" alt="" width="40px">
                     </div>
                     <div class="container-user-guide__description">
                         <p>
-                            <strong>Grupo fechado e exclusivo para apoiar sua transformação.</strong>
+                            <strong>Grupo fechado e exclusivo </strong> - para apoiar sua transformação.
                         </p>
                     </div>
                 </div>
@@ -503,19 +516,19 @@
                 <picture>
                     <!-- versão desktop -->
                     <source 
-                    srcset="../images/image_v2_24_mobile.webp" 
+                    srcset="images/image_v2_24_mobile.webp" 
                     media="(min-width: 1024px)" 
                     type="image/webp">
                     <source 
-                    srcset="../images/image_v2_24_mobile.png" 
+                    srcset="images/image_v2_24_mobile.png" 
                     media="(min-width: 1024px)">
                     <!-- versão mobile -->
-                    <source srcset="https://ariovaldojm.github.io/transforme/images/image_v2_24_mobile.webp" type="image/webp">
-                    <img src="https://ariovaldojm.github.io/transforme/images/image_v2_24_mobile.png" alt="" width="230px">
+                    <source srcset="images/image_v2_24_mobile.webp" type="image/webp">
+                    <img src="images/image_v2_24_mobile.png" alt="" width="230px">
                 </picture>
             </div>
             <div>
-                <a href="https://www.google.com" class="position-pattern limited-time__btn" target="_blank">
+                <a href="https://pay.hotmart.com/X100220477W" class="position-pattern limited-time__btn" target="_blank">
                     QUERO COMEÇAR AGORA!
                 </a>
             </div>
@@ -527,7 +540,9 @@
             <div class="guarantee__title">
                 <div class="guarantee__title-content">
                     <p>
-                        Você tem 7 dias completos para experimentar o treinamento.Se por qualquer motivo achar que não é para você, basta pedir o reembolso. Sem burocracia, sem letras miúdas.
+                        Você tem 7 dias completos para experimentar o treinamento.
+                        <br>
+                        Se por qualquer motivo achar que não é para você, basta pedir o reembolso. Sem burocracia, sem letras miúdas.
                     </p>
                 </div>
             </div>
@@ -558,15 +573,15 @@
                             <picture>
                                 <!-- versão desktop -->
                                 <source 
-                                srcset="../images/image_v2_34_mobile.webp" 
+                                srcset="images/image_v2_34_mobile.webp" 
                                 media="(min-width: 1024px)" 
                                 type="image/webp">
                                 <source 
-                                srcset="../images/image_v2_34_mobile.png" 
+                                srcset="images/image_v2_34_mobile.png" 
                                 media="(min-width: 1024px)">
                                 <!-- versão mobile -->
-                                <source srcset="https://ariovaldojm.github.io/transforme/images/image_v2_34_mobile.webp" type="image/webp">
-                                <img src="https://ariovaldojm.github.io/transforme/images/image_v2_34_mobile.png" alt="" width="120px">
+                                <source srcset="images/image_v2_34_mobile.webp" type="image/webp">
+                                <img src="images/image_v2_34_mobile.png" alt="" width="120px">
                             </picture>
                         </div>
                         <div class="product-business__container-card-title">
@@ -574,7 +589,7 @@
                         </div>
                     </a>
                     <div class="product-business__container-card-btn">
-                        <a href="https://www.google.com" class="product-business__container-card-btn-link" target="_blank">
+                        <a href="https://mercadolivre.com/sec/2u4PqCu" class="product-business__container-card-btn-link" target="_blank">
                             COMPRAR
                         </a>
                     </div>
@@ -583,8 +598,8 @@
                     <a href="https://mercadolivre.com/sec/23Vs8xx" target="_blank">
                         <div class="product-business__container-card-product">
                             <picture>
-                                <source srcset="https://ariovaldojm.github.io/transforme/images/image_v2_35_mobile.webp" type="image/webp">
-                                <img src="https://ariovaldojm.github.io/transforme/images/image_v2_35_mobile.png" alt="" width="120px">
+                                <source srcset="images/image_v2_35_mobile.webp" type="image/webp">
+                                <img src="images/image_v2_35_mobile.png" alt="" width="120px">
                             </picture>
                         </div>
                         <div class="product-business__container-card-title">
@@ -592,7 +607,7 @@
                         </div>
                     </a>
                     <div class="product-business__container-card-btn">
-                        <a href="https://www.google.com" class="product-business__container-card-btn-link" target="_blank">
+                        <a href="https://mercadolivre.com/sec/23Vs8xx" class="product-business__container-card-btn-link" target="_blank">
                             COMPRAR
                         </a>
                     </div>
@@ -670,25 +685,29 @@
                 <details>
                     <summary>
                         <span class="icon">❤️</span> 
-                        <span class="summary">Sou obeso posso pular corda?</span>
+                        <span class="summary">Sou obeso, e ou, problema no joelho, posso pular corda?</span>
                         <span class="chev">▾</span>
                     </summary>
                     <div class="content">
                         <p>
                             Cada corpo é único. O impacto é maior, então é importante <strong> ter a liberação de um médico </strong> antes de iniciar. O curso mostra a técnica para reduzir impacto, mas a liberação profissional é indispensável.
                         </p>
+                        <br>
+                        <p>
+                            Se você tem dores ou diagnóstico no joelho, só comece com <strong> uma avaliação profissional </strong>. O curso mostra técnica para reduzir impacto. Sempre peça orientação ao seu médico antes de começar caso tenha alguma doença pré-existente. 
+
+                        </p>
                     </div>
                 </details>
                 <details>
                     <summary>
                         <span class="icon">👉</span> 
-                        <span class="summary">Problema no joelho, posso pular corda?</span>
+                        <span class="summary">O pagamento é seguro?</span>
                         <span class="chev">▾</span>
                     </summary>
                     <div class="content">
                         <p>
-                            Se você tem dores ou diagnóstico no joelho, só comece com <strong> uma avaliação profissional </strong>. O curso mostra técnica para reduzir impacto, mas a avaliação profissional é indispensável. Sempre peça orientação ao seu médico antes de começar caso tenha alguma doença pré-existente. 
-
+                            Sim, seu pagamento é processado pela Hotmart, uma das maiores plataformas do mundo que atua há mais de 10 anos no mercado digital, garantindo uma compra 100% segura.
                         </p>
                     </div>
                 </details>
@@ -702,23 +721,23 @@
             <div class="footer__content">
                 <div class="position-pattern footer__content-social-media">
                     <div class="footer__content-social-media-img">
-                        <a href="https://www.google.com" target="_blank">
-                            <img src="https://ariovaldojm.github.io/transforme/images/image_v2_29_mobile.png" alt="" width="40px">
+                        <a href="https://api.whatsapp.com/send?phone=5511945208299&text=Seja%20bem-vinda(o)%20ao%20Transforma%20corda%20com%20Gabi%20🥰%0A👉%20Me%20diz:%20qual%20é%20seu%20nome%20e%20qual%20sua%20dúvida?" target="_blank" class="btn-whatsapp">
+                            <img src="images/image_v2_29_mobile.png" alt="" width="40px">
                         </a>
                     </div>
                     <div class="footer__content-social-media-img">
                         <a href="https://www.instagram.com/transformacordacomgabi?igsh=b253aXF0c2U5ODQ0&utm_source=qr" target="_blank">
-                            <img src="https://ariovaldojm.github.io/transforme/images/image_v2_30_mobile.png" alt="" width="40px">
+                            <img src="images/image_v2_30_mobile.png" alt="" width="40px">
                         </a>
                     </div>
                     <div class="footer__content-social-media-img">
                         <a href="https://www.tiktok.com/@transformacordacomgabi?_t=ZM-8zoLQcoWVLK&_r=1" target="_blank">
-                            <img src="https://ariovaldojm.github.io/transforme/images/image_v2_31_mobile.png" alt="" width="40px">
+                            <img src="images/image_v2_31_mobile.png" alt="" width="40px">
                         </a>
                     </div>
                     <div class="footer__content-social-media-img">
-                        <a href="https://youtube.com/@transformacordacomgabi?si=dburL1qKhmVtZGmA" target="_blank">
-                            <img src="https://ariovaldojm.github.io/transforme/images/image_v2_32_mobile.png" alt="" width="40px">
+                        <a href="https://www.youtube.com/@TRANSFORMACORDACOMGABI/videos" target="_blank">
+                            <img src="images/image_v2_32_mobile.png" alt="" width="40px">
                         </a>
                     </div>
                 </div>
@@ -825,56 +844,11 @@
             </div>
         </div>
     </section>
-</div>
+<!-- <div class="main-app">
+</div> -->
 
+<script src="js/script.js"></script>
 
-<script>
-document.querySelectorAll('details').forEach(detail => {
-  const content = detail.querySelector('.content');
-  if(detail.open) content.style.maxHeight = content.scrollHeight + 'px';
-
-  detail.addEventListener('toggle', () => {
-    if(detail.open) content.style.maxHeight = content.scrollHeight + 'px';
-    else content.style.maxHeight = 0;
-  });
-
-  window.addEventListener('resize', () => {
-    if(detail.open) content.style.maxHeight = content.scrollHeight + 'px';
-  });
-});
-
-function openModalPrivacy() {
-    document.getElementById('privacyModal').style.display = 'block';
-}
-
-function closeModalPrivacy() {
-    document.getElementById('privacyModal').style.display = 'none';
-}
-
-// Fechar clicando fora do modal
-window.onclick = function(event) {
-    const modal = document.getElementById('privacyModal');
-    if (event.target == modal) {
-        modal.style.display = 'none';
-    }
-}
-function openModalTerms() {
-    document.getElementById('termsModal').style.display = 'block';
-}
-
-function closeModalTerms() {
-    document.getElementById('termsModal').style.display = 'none';
-}
-
-// Fechar clicando fora do modal
-window.onclick = function(event) {
-    const modal = document.getElementById('termsModal');
-    if (event.target == modal) {
-        modal.style.display = 'none';
-    }
-}
-
-</script>
 
 </body>
 </html>
