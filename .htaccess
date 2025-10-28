@@ -1,4 +1,16 @@
-RewriteEngine on
+RewriteEngine On
+AddType image/webp .webp
+
+# Header always set Content-Security-Policy "upgrade-insecure-requests;"
+
+# Redireciona WWW para SEM WWW
+# RewriteCond %{HTTP_HOST} ^www\.pularcordaemagrece\.com\.br [NC]
+# RewriteRule ^(.*)$ https://pularcordaemagrece.com.br/$1 [L,R=301]
+
+# Força HTTPS
+# RewriteCond %{HTTPS} !=on
+# RewriteRule ^(.*)$ https://pularcordaemagrece.com.br/$1 [L,R=301]
+
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^(.*)$ $1.php

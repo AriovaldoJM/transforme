@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.pularcordaemagrece.com.br/sitemap.xml
