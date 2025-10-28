@@ -84,12 +84,13 @@
   display: block;
 }
 .bg-person {
-  position: relative;
+  height: 1120px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2rem 1rem;
-  background: url("../images/image_v3_home_mobile.webp")
+  background: linear-gradient(0deg, rgba(236, 235, 232, 1) 0%, transparent 100%),
+   url("../images/image_v3_home_mobile.webp")
     top center/cover
     no-repeat;
   z-index: 10;
@@ -115,7 +116,7 @@
 }
 .card {
   position: relative;
-  top: 24px;
+  top: -136px;
   background: rgba(
     0,
     0,
@@ -912,7 +913,7 @@
 /* INICIO GARANTIA PARA COMPRA */
 .bg-guarantee {
   position: relative;
-  top: 102.375rem;
+  top: 32.375rem;
   left: 0;
   height: 420px;
   background: url("../images/image_v2_26_mobile.webp")
@@ -1403,6 +1404,9 @@ h2 {
   }
   .click-btn-video {
     top: 124.8%; /* centraliza verticalmente */
+  }
+  .bg-person {
+    height: 1050px; 
   }
 }
 @media (min-width: 1024px) {
