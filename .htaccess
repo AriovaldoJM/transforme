@@ -46,4 +46,7 @@ RewriteRule ^(.*)$ $1.php
     # Others
     ExpiresByType application/pdf "access plus 1 year"
     ExpiresByType image/vnd.microsoft.icon "access plus 1 year"
+
+    # Compactação de texto
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript
 </IfModule>

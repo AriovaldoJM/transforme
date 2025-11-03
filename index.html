@@ -1,22 +1,213 @@
+<?php
+ob_start();
+header("Cache-Control: max-age=31536000, public");
+header("Expires: ".gmdate("D, d M Y H:i:s", time() + 31536000)." GMT");
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            text-decoration: none;
+            }
+            .main-desktop {
+            display: none;
+            }
+            .main-mobile {
+            display: block;
+            }
+            .menu-logo {
+            position: absolute;
+            top: 6px;
+            left: 50%;
+            transform: translateX(
+                -50%
+            );
+            text-decoration: none;
+            z-index: 999;
+            }
+
+            .menu-logo a {
+            text-decoration: none;
+            }
+            .menu-logo img {
+            width: 316px; 
+            }
+            .position-pattern {
+            position: absolute;
+            left: 50%;
+            transform: translateX(
+                -50%
+            );
+            }
+            .card {
+            position: relative;
+            top: 1.5rem;
+            background: rgba(
+                127,
+                0,
+                126,
+                0.6
+                );
+            margin-bottom: 30px;
+            padding: 30px 15px;
+            border-radius: 15px;
+            max-width: 400px;
+            height: 1040px;
+            text-align: center;
+            box-shadow: 0 8px
+                20px
+                rgba(
+                127,
+                0,
+                126,
+                0.2
+                );
+            z-index: 10;
+            }
+            .card h1 {
+            font-size: 2.2rem;
+            padding-top: 270px;
+            margin-bottom: 165px;
+            font-weight: 900;
+            color: yellow;
+            }
+            .card p {
+            font-size: 1.5rem;
+            line-height: 1.4;
+            margin-top: -120px;
+            margin-bottom: 60px;
+            color: #fff;
+            }
+            .benefits {
+            text-align: left;
+            margin-bottom: 25px;
+            }
+            .benefits div {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            font-size: 1.2rem;
+            color: #fff;
+            }
+            .benefits div span {
+            margin-right: 8px;
+            font-size: 1.8rem;
+            }
+            .button-wrapper {
+            padding: 20px 0px;
+            }
+
+            .btn-modern-init {
+            position: relative;
+            width: 300px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 75px 14px 35px;
+            border-radius: 50px;
+            color: #7f007e;
+            
+            font-weight: 600;
+            text-decoration: none;
+            border: 2px solid transparent;
+            background-image: linear-gradient(yellow,
+                #fff
+                ),
+                linear-gradient(
+                90deg,
+                #7928ca,
+                #ff0080
+                );
+            background-origin: border-box;
+            background-clip: padding-box,
+                border-box;
+
+            transition: all
+                0.3s ease;
+            overflow: hidden;
+            }
+            .btn-modern-init
+            .circle {
+            position: absolute;
+            right: -2px;
+            top: 50%;
+            transform: translateY(
+                -50%
+            );
+            background: linear-gradient(
+                90deg,
+                #7928ca,
+                #ff0080
+            );
+            border-radius: 50%;
+            width: 66px;
+            height: 66px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all
+                0.3s ease;
+            }
+            .btn-modern-init
+            .arrow {
+            font-size: 26px;
+            font-weight: 100;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+            transition: transform
+                0.3s ease;
+            }
+            .btn-modern-init:hover
+            .arrow {
+            transform: translateX(
+                4px
+            );
+            }
+
+            .btn-modern-init:hover
+            .circle {
+            box-shadow: 0 0
+                12px
+                rgba(
+                255,
+                102,
+                196,
+                0.6
+                );
+            }
+    </style>
+
+    <link rel="preload" href="css/style.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/style.css"></noscript>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="preconnect" href="https://www.youtube.com" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.youtube.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
     <!-- FAVICON -->
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.webp">
-    <!-- TÍTULO DA PÁGINA -->
+    <link rel="shortcut icon" type="image/x-icon" href="image/favicon.webp">
     <title>TransformaCorda com Gabi — Aprenda a pular do jeito certo!</title>
-    <!-- DESCRIÇÃO -->
     <meta name="description" content="Aprenda a pular corda do jeito certo, sem lesões e com prazer em se mover! O TransformaCorda ensina a técnica correta para emagrecer com segurança e transformar seu corpo e sua energia.">
-    <!-- PALAVRAS-CHAVE (opcional, o Google quase não usa mais, mas pode ajudar no Bing) -->
     <meta name="keywords" content="fitness, treinamentos de pular corda, aulas de pular corda, pular corda para iniciantes, passo a passo para aprender a pular corda, pular corda jeito certo, como aprender a pular corda, treinamento de pular corda online, aulas de pular corda para iniciantes, técnica correta de pular corda, como começar a pular corda, treino prático com corda em casa, aprender a pular corda passo a passo, aprender a pular corda, curso pular corda, aprenda pular corda, exercício eficaz em casa, treino rápido e eficiente em casa, exercícios fáceis para começar em casa, exercícios que dão resultado em casa" />
-    <!-- AUTOR -->
     <meta name="author" content="TransformaCorda com Gabi">
-    <!-- CANONICAL URL (versão principal da página) -->
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#7F007E">
     <link rel="canonical" href="https://www.pularcordaemagrece.com.br/" />
-    <!-- ==============================
-   OPEN GRAPH (Facebook, Instagram, WhatsApp)
-   ============================== -->
+   
     <!-- OPEN GRAPH (Facebook, Instagram, WhatsApp) -->
     <meta property="og:title" content="TransformaCorda com Gabi — Aprenda a pular do jeito certo!">
     <meta property="og:type" content="website">
@@ -28,31 +219,13 @@
     <meta property="og:description" content="Descubra como pular corda pode transformar seu corpo, sua mente e sua disposição. Tudo começa com o primeiro pulo!">
     <meta property="og:site_name" content="TransformaCorda com Gabi">
 
-
-    <!-- ==============================
-    TWITTER CARD
-    ============================== -->
+    <!-- TWITTER CARD -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="TransformaCorda com Gabi — Aprenda a pular do jeito certo!">
     <meta name="twitter:description" content="Aprenda a pular corda com segurança, técnica e leveza. Transforme seu corpo e sua energia.">
     <meta name="twitter:image" content="https://www.pularcordaemagrece.com.br/images/image_compart_social.jpg">
     <meta name="twitter:creator" content="@transformacorda">
 
-    <!-- ==============================
-    VIEWPORT E COMPATIBILIDADE
-    ============================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <!-- ==============================
-    ROBOTS
-    ============================== -->
-    <meta name="robots" content="index, follow">
-
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" as="style" onload="this.rel='stylesheet'">
-    <link rel="stylesheet" href="css/style.css">
     <!-- Google tag (gtag.js) --> 
     <script>
         // Adia o carregamento até a página terminar de carregar
@@ -71,9 +244,9 @@
         });
     </script>
     <script > window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-17614092551'); </script>
-    <script src="https://www.youtube.com/iframe_api"></script>
+    <script async src="https://www.youtube.com/iframe_api"></script>
     <!-- TikTok Pixel Code Start -->
-    <!-- <script>
+    <!-- <script>   
         window.addEventListener('load', function() {
         !function (w, d, t) {
             w.TiktokAnalyticsObject = t;
@@ -114,31 +287,32 @@
     <!-- TikTok Pixel Code End -->
 </head>
 <body>
+    <!-- Loader -->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
     <!-- Bloco 1 -->
     <section class="bg-person">
-        <div class="menu-logo">
-            <picture>
-                <!-- versão tablede -->
-                <source 
-                srcset="images/logo_v2_sem_corda.png" 
-                media="(min-width: 738px)">
-                <!-- versão desktop -->
-                <source 
-                srcset="images/logo_v2_sem_corda.png" 
-                media="(min-width: 1024px)">
-                <source srcset="images/logo_v2.webp" type="image/webp" class="sem-corda">
-                <img src="images/logo_v2.png" alt="Uma corda esticada e o logo redondo no centro">
-            </picture>
-        </div>
-        <div class="container-my-start-rope">
-            <div class="container-first"></div>
-            <!-- mobile -->
-            <div class="container-secound">
-                <div class="container-secound--icon-first">
-                    <source srcset="images/image_v2_12_mobile.webp" type="image/webp">
-                </div>
-            </div>
-        </div>
+        <header class="menu-logo" role="banner">
+            <a href="/" aria-label="TransformaCorda com Gabi — Página inicial">
+                <picture>
+                    <!-- versão desktop -->
+                    <source srcset="image/v4_logo_sem_corda.webp" media="(min-width: 1024px)" type="image/png">
+                    <!-- versão tablet -->
+                    <source srcset="image/v4_logo_sem_corda.webp" media="(min-width: 738px)" type="image/png">
+                    <!-- versão mobile -->
+                    <source srcset="image/v4_logo.webp" type="image/webp">
+                    <img 
+                        src="image/v4_logo.png" 
+                        alt="Logotipo TransformaCorda com Gabi" 
+                        width="180" 
+                        height="100"
+                        fetchpriority="high" 
+                        decoding="async"
+                    >
+                </picture>
+            </a>
+        </header>
         <div class="card">
             <h1>Transforme seu corpo e sua energia com o poder da corda!</h1>
             <p>Descubra como pular com técnica e leveza — sem academia e com prazer em cuidar de você.</p>
@@ -150,13 +324,20 @@
             </div>
             <div class="button-wrapper">
                 <a 
-                    href="https://pay.hotmart.com/X100220477W?off=afecapqi" class="btn-init" target="_blank">Quero começar minha transformação hoje!
+                    href="https://pay.hotmart.com/X100220477W?off=afecapqi" class="btn-modern-init" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Ir para a página de pagamento do treinamento TransformaCorda na Hotmart"
+                    title="Quero começar a treinar hoje"
+                >
+                    <span class="text">
+                        QUERO COMEÇAR <br> 
+                        A TREINAR HOJE
+                    </span>
+                    <span class="circle" aria-hidden="true">
+                        <span class="arrow" aria-hidden="true">➜</span>
+                    </span>
                 </a>
-                <div class="">
-                    <picture>
-                        <img src="images/click_mobile.png" alt="Clique" class="click-btn-init" style="width: 50px;">
-                    </picture>
-                </div>
             </div>
         </div>
     </section>
@@ -169,6 +350,11 @@
                     Você ganha autoestima, disposição e sente orgulho de ver seu corpo reagindo.
                 </p>
             </div>
+            <div>
+                <span class="veja-videos">
+                    Veja vídeos a seguir:
+                </span>
+            </div>
         </div>
         <div class="container-third"></div>
     </section>
@@ -176,16 +362,6 @@
     <section class="bg-video">
         <div class="container-video">
             <div class="bg-video-template">
-                <picture>
-                    <!-- versão desktop -->
-                    <source 
-                    srcset="images/image_v2_39_desktop.webp" 
-                    media="(min-width: 1024px)" 
-                    type="image/webp">
-                    <!-- versão mobile -->
-                    <source srcset="images/image_v2_15_mobile.webp" type="image/webp">
-                    <img src="images/image_v2_15_mobile.png" alt="" width="274px">
-                </picture>
                 <!-- 🔹 Vídeo BEFORE -->
                 <div class="position-pattern video-wrap-before">
                     <div id="player-mobile" class="player-container"></div>
@@ -193,7 +369,7 @@
                     <div id="video-inner-before" class="video-inner-before">
                         <img 
                             id="meuVideo" 
-                            src="images/thumbnails_before.webp" 
+                            src="image/v4_thumbnails_before.webp" 
                             class="video-thumb"
                             alt="Antes - vídeo de exemplo"
                             onclick="loadVideoButtonBefore()"
@@ -206,7 +382,7 @@
                     <div id="video-inner-after" class="video-inner-after">
                         <img 
                             id="meuVideo" 
-                            src="images/thumbnails_after.webp" 
+                            src="image/v4_thumbnails_after.webp" 
                             class="video-thumb"
                             alt="Depois - vídeo de exemplo"
                             onclick="loadVideoButtonAfter()"
@@ -236,14 +412,20 @@
                 </div>
             </div>
             <div class="container-btn-modern-video">
-                <a href="https://pay.hotmart.com/X100220477W?off=afecapqi" class="btn-modern-video" target="_blank">
-                <span class="text">
-                    QUERO COMEÇAR <br> 
-                    A TREINAR HOJE
-                </span>
-                <span class="circle">
-                    <span class="arrow">➜</span>
-                </span>
+                <a 
+                    href="https://pay.hotmart.com/X100220477W?off=afecapqi" class="btn-modern-video" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Ir para a página de pagamento do treinamento TransformaCorda na Hotmart"
+                    title="Quero começar a treinar hoje"
+                >
+                    <span class="text">
+                        QUERO COMEÇAR <br> 
+                        A TREINAR HOJE
+                    </span>
+                    <span class="circle" aria-hidden="true">
+                        <span class="arrow" aria-hidden="true">➜</span>
+                    </span>
                 </a>
             </div>
         </div>
@@ -283,14 +465,20 @@
                 </ul>
             </div>
             <div class="container-btn-modern-transfomation">
-                <a href="https://pay.hotmart.com/X100220477W?off=afecapqi" class="btn-modern-transfomation" target="_blank">
-                <span class="text">
-                    QUERO COMEÇAR <br> 
-                    A TREINAR HOJE
-                </span>
-                <span class="circle">
-                    <span class="arrow">➜</span>
-                </span>
+                <a 
+                    href="https://pay.hotmart.com/X100220477W?off=afecapqi" class="btn-modern-transfomation" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Ir para a página de pagamento do treinamento TransformaCorda na Hotmart"
+                    title="Quero começar a treinar hoje"
+                >
+                    <span class="text">
+                        QUERO COMEÇAR <br> 
+                        A TREINAR HOJE
+                    </span>
+                    <span class="circle" aria-hidden="true">
+                        <span class="arrow" aria-hidden="true">➜</span>
+                    </span>
                 </a>
             </div>
         </div>
@@ -304,13 +492,24 @@
         </div>
         <div class="position-pattern limited-time__img">
             <picture>
-                <!-- versão mobile -->
-                <source srcset="images/image_v2_24_mobile.webp" type="image/webp">
-                <img src="images/image_v2_24_mobile.png" alt="" width="230px">
+                <img 
+                    src="image/v4_desconto.webp" 
+                    alt="Imagem promocional da oferta por tempo limitado do treinamento TransformaCorda"
+                    width="230" height="auto"
+                    loading="lazy"
+                    decoding="async"
+                >
             </picture>
         </div>
         <div>
-            <a href="https://pay.hotmart.com/X100220477W?off=afecapqi" class="position-pattern limited-time__btn" target="_blank">
+            <a 
+                href="https://pay.hotmart.com/X100220477W?off=afecapqi"
+                class="position-pattern limited-time__btn"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Ir para a página de pagamento do treinamento TransformaCorda na Hotmart"
+                title="Quero começar agora"
+                >
                 QUERO COMEÇAR AGORA!
             </a>
         </div>
@@ -333,12 +532,11 @@
             </div>
             <div class="guarantee__img">
                 <picture>
-                    <!-- versão mobile -->
                     <img 
-                        decoding="async" 
-                        src="images/selo_garantia_7_dias.webp" 
-                        alt="Selo Garantia 7 Dias" 
-                        class="selo-garantia"
+                    decoding="async" 
+                    src="image/v4_selo_garantia_7_dias.webp" 
+                    alt="Selo Garantia 7 Dias" 
+                    class="selo-garantia"
                     >
                 </picture>
             </div>
@@ -353,40 +551,65 @@
             <div class="product-business__hr"></div>
             <div class="product-business__cards">
                 <div class="product-business__container-card">
-                    <a href="https://mercadolivre.com/sec/2u4PqCu" target="_blank" >
+                    <a 
+                        href="https://mercadolivre.com/sec/2u4PqCu" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        class="product-business__container-card-link"
+                        aria-label="Ver corda segmentada no Mercado Livre e comprar"
+                        title="Corda Segmentada — comprar no Mercado Livre"
+                    >
                         <div class="product-business__container-card-product">
                             <picture>
-                                <source srcset="images/image_v2_34_mobile.webp" type="image/webp">
-                                <img src="images/image_v2_34_mobile.png" alt="" width="120px">
+                                <!-- <source srcset="images/image_v2_34_mobile.webp" type="image/webp"> -->
+                                <img 
+                                    src="image/v4_corda.webp" 
+                                    alt="Corda de pular segmentada" 
+                                    width="120" height="160" 
+                                    loading="lazy"
+                                    decoding="async"
+                                >
                             </picture>
                         </div>
                         <div class="product-business__container-card-title">
                             <p>Segmentada</p>
                         </div>
+                        <div class="product-business__container-card-btn">
+                            <span class="product-business__container-card-btn-link" aria-hidden="true">
+                                COMPRAR
+                            </span>
+                        </div>
                     </a>
-                    <div class="product-business__container-card-btn">
-                        <a href="https://mercadolivre.com/sec/2u4PqCu" class="product-business__container-card-btn-link" target="_blank">
-                            COMPRAR
-                        </a>
-                    </div>
                 </div>
                 <div class="product-business__container-card">
-                    <a href="https://mercadolivre.com/sec/23Vs8xx" target="_blank">
+                    <a 
+                        href="https://mercadolivre.com/sec/23Vs8xx" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="product-business__container-card-link"
+                        aria-label="Ver corda segmentada colorida no Mercado Livre e comprar"
+                        title="Corda Segmentada Colorida — comprar no Mercado Livre"
+                    >
                         <div class="product-business__container-card-product">
                             <picture>
-                                <source srcset="images/image_v2_35_mobile.webp" type="image/webp">
-                                <img src="images/image_v2_35_mobile.png" alt="" width="120px">
+                                <img 
+                                    src="image/v4_corda_colorida.webp" 
+                                    alt="Corda de pular segmentada colorida" 
+                                    width="120" height="160" 
+                                    loading="lazy"
+                                    decoding="async"
+                                >
                             </picture>
                         </div>
                         <div class="product-business__container-card-title">
                             <p>Segmentada colorida</p>
                         </div>
+                        <div class="product-business__container-card-btn">
+                            <span class="product-business__container-card-btn-link" aria-hidden="true">
+                                COMPRAR
+                            </span>
+                        </div>
                     </a>
-                    <div class="product-business__container-card-btn">
-                        <a href="https://mercadolivre.com/sec/23Vs8xx" class="product-business__container-card-btn-link" target="_blank">
-                            COMPRAR
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -395,7 +618,7 @@
     <section class="faqs-and-terms">
         <div class="position-pattern faqs__content">
             <header>
-                <h1>Perguntas Frequentes</h1>
+                <p>Perguntas Frequentes</p>
             </header>
             <main class="faqs__content-wrap">
                 <details>
@@ -496,23 +719,67 @@
             <div class="footer__content">
                 <div class="position-pattern footer__content-social-media">
                     <div class="footer__content-social-media-img">
-                        <a href="https://api.whatsapp.com/send?phone=5511945208299&text=Seja%20bem-vinda(o)%20ao%20Transforma%20corda%20com%20Gabi%20🥰%0A👉%20Me%20diz:%20qual%20é%20seu%20nome%20e%20qual%20sua%20dúvida?" target="_blank" class="btn-whatsapp">
-                            <img src="images/image_v2_29_mobile.png" alt="" width="40px">
+                        <a 
+                            href="https://api.whatsapp.com/send?phone=5511945208299&text=Seja%20bem-vinda(o)%20ao%20Transforma%20corda%20com%20Gabi%20🥰%0A👉%20Me%20diz:%20qual%20é%20seu%20nome%20e%20qual%20sua%20dúvida?" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="btn-whatsapp"
+                            aria-label="Falar com Gabi pelo WhatsApp"
+                        >
+                            <img 
+                                src="image/v4_whatsapp.webp" 
+                                alt="WhatsApp" 
+                                width="40" height="40"
+                                loading="lazy"
+                                decoding="async"
+                            >
                         </a>
                     </div>
                     <div class="footer__content-social-media-img">
-                        <a href="https://www.instagram.com/transformacordacomgabi?igsh=b253aXF0c2U5ODQ0&utm_source=qr" target="_blank">
-                            <img src="images/image_v2_30_mobile.png" alt="" width="40px">
+                        <a 
+                            href="https://www.instagram.com/transformacordacomgabi?igsh=b253aXF0c2U5ODQ0&utm_source=qr" 
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Perfil do TransformaCorda no Instagram"
+                        >
+                            <img 
+                                src="image/v4_instagram.webp" 
+                                alt="Instagram" 
+                                width="40" height="40"
+                                loading="lazy"
+                                decoding="async"
+                            >
                         </a>
                     </div>
                     <div class="footer__content-social-media-img">
-                        <a href="https://www.tiktok.com/@transformacordacomgabi?_t=ZM-8zoLQcoWVLK&_r=1" target="_blank">
-                            <img src="images/image_v2_31_mobile.png" alt="" width="40px">
+                        <a 
+                            href="https://www.tiktok.com/@transformacordacomgabi?_t=ZM-8zoLQcoWVLK&_r=1" target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Perfil do TransformaCorda no TikTok"
+                        >
+                            <img 
+                                src="image/v4_tiktok.webp" 
+                                alt="TikTok" 
+                                width="40" height="40"
+                                loading="lazy"
+                                decoding="async"
+                            >
                         </a>
                     </div>
                     <div class="footer__content-social-media-img">
-                        <a href="https://www.youtube.com/@TRANSFORMACORDACOMGABI/videos" target="_blank">
-                            <img src="images/image_v2_32_mobile.png" alt="" width="40px">
+                        <a 
+                            href="https://www.youtube.com/@TRANSFORMACORDACOMGABI/videos" 
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Canal do TransformaCorda no YouTube"
+                        >
+                            <img 
+                                src="image/v4_youtube.webp"  
+                                alt="YouTube" 
+                                width="40" height="40"
+                                loading="lazy"
+                                decoding="async"
+                            >
                         </a>
                     </div>
                 </div>
@@ -612,6 +879,21 @@
             </div>
         </div>
     </section>
-    <script defer src="js/script.js"></script>
+    <script defer src="js/script.min.js"></script>
 </body>
 </html>
+<?php
+$html = ob_get_clean();
+$html = preg_replace(
+    [
+        '/\>[^\S ]+/s',
+        '/[^\S ]+\</s',
+        '/(\s)+/s',
+        '/<!--(.*?)-->/s',
+        '/\/\*.*?\*\//s'
+    ],
+    ['>', '<', '\\1', '', ''],
+    $html
+);
+echo $html;
+?>

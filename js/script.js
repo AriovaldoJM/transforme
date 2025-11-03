@@ -84,6 +84,14 @@ function loadVideoButtonBefore() {
                 height: '360',
                 width: '640',
                 videoId: '5jXNy_RAKxw',
+                playerVars: {
+                    'autoplay': 1,
+                    'mute': 1,          // ✅ Safari permite autoplay se estiver mudo
+                    'playsinline': 1,   // ✅ Evita abrir tela cheia no iPhone
+                    'controls': 1,
+                    'rel': 0,
+                    'modestbranding': 1
+                },
                 events: {
                     'onReady': () => {
                         playerBeforeMobile.playVideo();
@@ -100,6 +108,14 @@ function loadVideoButtonBefore() {
                 height: '360',
                 width: '640',
                 videoId: '5jXNy_RAKxw',
+                playerVars: {
+                    'autoplay': 1,
+                    'mute': 1,          // ✅ Safari permite autoplay se estiver mudo
+                    'playsinline': 1,   // ✅ Evita abrir tela cheia no iPhone
+                    'controls': 1,
+                    'rel': 0,
+                    'modestbranding': 1
+                },
                 events: {
                     'onReady': () => {
                         console.log("Player pronto!");
@@ -130,6 +146,14 @@ function loadVideoButtonAfter() {
                 height: '360',
                 width: '640',
                 videoId: 'K-_XRC-SHnQ',
+                playerVars: {
+                    'autoplay': 1,
+                    'mute': 1,          // ✅ Safari permite autoplay se estiver mudo
+                    'playsinline': 1,   // ✅ Evita abrir tela cheia no iPhone
+                    'controls': 1,
+                    'rel': 0,
+                    'modestbranding': 1
+                },
                 events: {
                     'onReady': () => {
                         console.log("Player pronto!");
@@ -139,7 +163,7 @@ function loadVideoButtonAfter() {
                 }
             });
         }
-        playerAfter.playVideo(); // 🔥 inicia o vídeo da API
+        // playerAfter.playVideo(); // 🔥 inicia o vídeo da API
     }else{
         // === DESKTOP ===
         if (!playerAfter || typeof playerAfter.playVideo !== "function") {
@@ -147,6 +171,14 @@ function loadVideoButtonAfter() {
                 height: '360',
                 width: '640',
                 videoId: 'K-_XRC-SHnQ',
+                playerVars: {
+                    'autoplay': 1,
+                    'mute': 1,          // ✅ Safari permite autoplay se estiver mudo
+                    'playsinline': 1,   // ✅ Evita abrir tela cheia no iPhone
+                    'controls': 1,
+                    'rel': 0,
+                    'modestbranding': 1
+                },
                 events: {
                     'onReady': () => {
                         playerAfter.playVideo();
@@ -163,16 +195,10 @@ function loadVideoButtonAfter() {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
+window.addEventListener('load', function() {
+  const loader = document.getElementById('loader');
+  // mostra o loader por 2 segundos (ou mais se quiser)
+  setTimeout(() => {
+    loader.classList.add('hidden');
+  }, 800);
+});
